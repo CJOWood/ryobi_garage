@@ -1,0 +1,10 @@
+{
+    "domain": "ryobi_garage",
+    "name": "Ryobi Garage Door",
+    "documentation": "https://github.com/CJOWood/ryobi_garage",
+    "dependencies": ["git+https://github.com/CJOWood/ryobigdopy.git@master"],
+    "codeowners": ["@CJOWood"],
+    "requirements": [],
+    "iot_class": "cloud_push",
+    "version": "0.1.0"
+  }
