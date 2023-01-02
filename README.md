@@ -5,6 +5,8 @@ Home Assistant custom component integration with Websocket-based connection to R
 This integration will request all of the Garage Door devices linked to your Ryobi account and automatically add them into Home Assistant.
 
 **This is a work-in-progress!** Currently, you can view the state (OPEN, CLOSED, OPENING, CLOSING) and the current position (% open) of the door. You can also open or close the door but **not set a position**. The Entity also has extra attributes such as Last Set, Last Value, Vacation Mode, Sensor Flag, Light State, and Light Timer. *The Light entity is not setup* and therefore not controllable yet.
+### Tested Devices
+- GDO125
 
 ## Setup
 The Garage Door must first be setup and added through Ryobi's app. Once you've created an account and can successfully control the garage door from the app, you can use your login details with this integration. 
