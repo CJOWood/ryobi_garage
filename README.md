@@ -21,6 +21,13 @@ Once you've complete the above steps, restart Home Assistant. Once restarted, a 
 
 ## Project State and Contributing
 Feel free to contribute to this project! I am not a professional programmer... just a dad who what to control his garage door from Home Assistant. Updates will be few and far-between.
+### Issues
+Please open an Issue and paste **DEBUG** logs or I can't help as easily. **PLEASE remove all personal login details, including your username, password, device IDs, and API Keys!!**
+
+    logger:
+      logs:
+        custom_components.ryobi_garage: debug
+        
 ### Functionality / To-Do 
 See the [Projects board](https://github.com/users/CJOWood/projects/1) for updated list.
  - [x] HTTP: Login to check details and get API Key.
