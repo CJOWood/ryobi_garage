@@ -21,7 +21,8 @@ Once you've complete the above steps, restart Home Assistant. Once restarted, a 
 
 ## Project State and Contributing
 Feel free to contribute to this project! I am not a professional programmer... just a dad who what to control his garage door from Home Assistant. Updates will be few and far-between.
-### Functionality / To-Do
+### Functionality / To-Do 
+See the [Projects board](https://github.com/users/CJOWood/projects/1) for updated list.
  - [x] HTTP: Login to check details and get API Key.
  - [x] HTTP: Get devices list to check for more than 1 GDO.
  - [x] HTTP: Get device state for each device.
