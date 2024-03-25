@@ -181,18 +181,18 @@ class RyobiApi:
                 "vacation_state": garage_door["vacationMode"]["enum"][garage_door["vacationMode"]["value"]], #TODO Eventually define enum in const so we dont rely on server response to define enum
             },
             "sensorFlag": {
-                "lastSet": garage_door["sensorFlag"]["lastSet"],
+                "lastSet": garage_door["sensorFlag"].get("lastSet"),
                 "lastValue": garage_door["sensorFlag"]["lastValue"],
                 "value": garage_door["sensorFlag"]["value"],
             },
             "opMode": {
-                "lastSet": garage_door["opMode"]["lastSet"],
+                "lastSet": garage_door["opMode"].get("lastSet"),
                 "lastValue": garage_door["opMode"]["lastValue"],
                 "value": garage_door["opMode"]["value"],
                 "op_state": garage_door["opMode"]["enum"][garage_door["opMode"]["value"]] #TODO Eventually define enum in const so we dont rely on server response to define enum
             },
             "doorState": {
-                "lastSet": garage_door["doorState"]["lastSet"],
+                "lastSet": garage_door["doorState"].get("lastSet"),
                 "lastValue": garage_door["doorState"]["lastValue"],
                 "value": garage_door["doorState"]["value"],
                 "enum": garage_door["doorState"]["enum"],
@@ -200,18 +200,18 @@ class RyobiApi:
             },
             "doorPercentOpen": garage_door["doorPercentOpen"]["value"], #-1 is closed
             "doorPosition": {
-                "lastSet": garage_door["doorPosition"]["lastSet"],
+                "lastSet": garage_door["doorPosition"].get("lastSet"),
                 "lastValue": garage_door["doorPosition"]["lastValue"],
                 "value": garage_door["doorPosition"]["value"], #value of 0 - 180 -> but not?? Could be different per door?
             },
             "garageLight": {
                 "lightState": {
-                    "lastSet": garage_light["lightState"]["lastSet"],
+                    "lastSet": garage_light["lightState"].get("lastSet"),
                     "lastValue": garage_light["lightState"]["lastValue"],
                     "value": garage_light["lightState"]["value"],
                 },
                 "lightTimer": {
-                    "lastSet": garage_light["lightTimer"]["lastSet"],
+                    "lastSet": garage_light["lightTimer"].get("lastSet"),
                     "lastValue": garage_light["lightTimer"]["lastValue"],
                     "value": garage_light["lightTimer"]["value"],
                 },
